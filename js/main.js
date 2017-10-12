@@ -1,13 +1,13 @@
 $(document).ready(function () {
     function bodyFixHeight() {
-        $("#header").css("height", ($(window).height()) + "px");
-        //        $("section").css("min-height", ($(window).height()) + "px");
+        $("#header").css("height", ($(window).height()) - 100 + "px");
+                $("section").css("min-height", ($(window).height()) - 100 + "px");
     };
     bodyFixHeight();
     $(window).resize(function () {
         var vw = $(window).width()
             , vh = $(window).height();
-        $("#header").css("min-height", vh - 70 + "px");
+        $("#header").css("min-height", vh - 100 + "px");
         bodyFixHeight();
     });
     $("a.toSection1").click(function () {
