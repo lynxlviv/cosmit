@@ -15,8 +15,10 @@
   
   h1,
   h2,
-  h3 {
-      /*      font-family: 'Mukta', sans-serif;*/
+  h3,
+h4{
+/*            font-family: 'Lobster+Two', sans-serif;*/
+            font-family: 'Lobster', sans-serif;
       margin-bottom: 20px;
       font-weight: bold;
   }
@@ -335,30 +337,59 @@ p{
      
       box-sizing: border-box;
   }
+footer a {
+    font-size: 12px;
+           color: white;
+    text-decoration: none;
+       background: none;
+    
+    font-weight: normal;
+    opacity: 0.7
+}
+
+footer a:hover{
+    text-decoration: none;
+    opacity: 1;
+    color: white
+}
 .footer-content{
 /*      width: 100%;*/
       min-height: 200px;
     
-      display: flex;
-     padding: 0 10%;
+/*      display: flex;*/
+      padding: 15px 6% 15px 6%;
      background: linear-gradient(90deg, #0b3f90 6%, #3399cc 66%);
       color: white;
-   
+   margin: 0;
+/*
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
+*/
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px
+   
 }
 .copyright-box{
     
-      width: 100%;
-      height: 100px;
+/*      width: 100%;*/
+      height: 75px;
       background-color: #e3e8ec;
-     padding: 0 10%;
-      display: flex;
+     padding: 15px 6% 15px 6%;
+    display: flex;
       align-items: center;
+/*
       justify-content: space-between;
       flex-wrap: wrap;
+*/
+    margin: 0;
        
+}
+.footer-nav{
+    list-style: none
 }
   
   .up-btn {
