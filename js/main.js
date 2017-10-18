@@ -1,50 +1,56 @@
 $(document).ready(function () {
     function bodyFixHeight() {
         var vh = $(window).height();
-        $("#header").css("height", ($(window).height()) - 100 + "px");
+        $(".main-block").css("height", ($(window).height()) - 75 + "px");
         if( vh < 970){
-                $("section").css("min-height", ($(window).height()) - 100 + "px")};
+                $("section").css("min-height", ($(window).height()) - 75 + "px")};
     };
     bodyFixHeight();
     $(window).resize(function () {
         var vw = $(window).width()
             , vh = $(window).height();
-        $("#header").css("min-height", vh - 100 + "px");
+        $(".main-block").css("min-height", vh - 75 + "px");
         bodyFixHeight();
+    });
+    $("li.to-home").click(function () {
+        $("html,body").animate({
+            scrollTop: 0
+        }, 1000);
+        return false;
     });
     $("li.toSection1").click(function () {
         $("html,body").animate({
-            scrollTop: $(".section1").offset().top - 100
+            scrollTop: $(".section1").offset().top - 75
         }, 1000);
         return false;
     });
     $("li.toSection2").click(function () {
         $("html,body").animate({
-            scrollTop: $(".section2").offset().top - 100
+            scrollTop: $(".section2").offset().top - 75
         }, 1000);
         return false;
     });
     $("li.toSection3").click(function () {
         $("html,body").animate({
-            scrollTop: $(".section3").offset().top - 100
+            scrollTop: $(".section3").offset().top - 75
         }, 1000);
         return false;
     });
     $("li.toSection4").click(function () {
         $("html,body").animate({
-            scrollTop: $(".section4").offset().top - 100
+            scrollTop: $(".section4").offset().top - 75
         }, 1000);
         return false;
     });
     $("li.toSection5").click(function () {
         $("html,body").animate({
-            scrollTop: $(".section5").offset().top - 100
+            scrollTop: $(".section5").offset().top - 75
         }, 1000);
         return false;
     });
     $("li.toSection6").click(function () {
         $("html,body").animate({
-            scrollTop: $(".section6").offset().top - 100
+            scrollTop: $(".section6").offset().top - 75
         }, 1000);
         return false;
     });
