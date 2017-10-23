@@ -50,6 +50,9 @@ p {
 .margin-bottom {
     margin-bottom: 50px;
 }
+.margin-l-r{
+    margin: 0 5px
+}
 
 .text-align-center {
     text-align: center
@@ -63,8 +66,8 @@ p {
 /*style for header*/
 
 #header {
-    width: inherit;
-    height: auto;
+    width: 100%;
+    min-height: 75px;
     margin: 0;
     padding: 0;
     /*
@@ -74,7 +77,7 @@ justify-content: center;
 }
 
 .top-navigation-box {
-    /*      width: 100%;*/
+          width: 100%;
     min-height: 75px;
     background-color: white;
     display: flex;
@@ -87,7 +90,8 @@ justify-content: center;
     position: fixed;
     z-index: 100;
     border-radius: 0;
-    border: none
+    border: none;
+    margin: 0
 }
 
 .logo-box {
@@ -181,7 +185,7 @@ color: #3399cc;
     width: 100%;
     height: auto;
     position: relative;
-    top: 100px;
+/*    top: 100px;*/
 }
 
 .main-block .color-text-white {
@@ -201,8 +205,7 @@ top: 100px;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    background-image: url(../img/bg2.svg);
-    /*      background-position: bottom;*/
+    background-image: url(../img/Shut_cl_oct23.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -227,6 +230,9 @@ top: 100px;
     /*      background-color: #1374c9;*/
     background: linear-gradient(90deg, #0b3f90 6%, #3399cc 66%);
     color: white
+}
+.section3{
+    background-image: url(../img/bgDotted.png)
 }
 
 .delivery-process-box {
@@ -261,8 +267,60 @@ top: 100px;
     height: auto;
     margin: 15px 0 25px 0;
 }
+.form-wrapper{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+#form-send-massage{
+   margin-top: 70px;
+   margin-bottom: 50px;
+text-align: left;
+    margin: 0 auto;
+    
+    
+}
+input[type=text],textarea{
+ padding: 4px;
+ font-size: 15px;
+ border: 3px solid #3399cc;
+margin: 3px;
+ border-radius: 3px;
+ background: rgba(255, 255, 255, .5);
+/*box-sizing: border-box;*/
+ outline: none;
+ color: grey;
+/* width: 26%;*/
+    
+  
+ 
+}
 
 
+
+button[type=submit] {
+padding: 4px;
+ font-size: 15px;
+ border: 3px solid rgb(51, 153, 204);
+margin: 3px 3px -30px 3px;
+ border-radius: 3px;
+ background: rgba(51, 153, 204, 0.5);
+/*box-sizing: border-box;*/
+ outline: none;
+ color: white;
+ width: 100px;
+    cursor: pointer
+    
+  
+ 
+}
+button[type=submit]:hover{
+    background: rgba(51, 153, 204, 1);
+};
 /*style for footer*/
 
 #footer {
@@ -287,6 +345,13 @@ footer a:hover {
     color: white
 }
 
+footer p {
+    font-size: 12px;
+    color: white;
+    opacity: 0.7
+    
+}
+
 .footer-content {
     min-height: 200px;
     padding: 15px 6% 15px 6%;
@@ -303,7 +368,7 @@ footer a:hover {
 
 .copyright-box {
     height: 30px;
-    background-color: #e3e8ec;
+    background-color: #b3b9be;
     padding: 15px 6% 15px 6%;
     display: flex;
     align-items: center;
@@ -361,6 +426,6 @@ footer a:hover {
         padding-right: 0
     }
     .main-block {
-        background-position: 75%;
+        background-position: 45%;
     }
 }
