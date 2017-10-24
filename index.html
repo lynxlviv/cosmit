@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Cosmit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/disc_logo.png">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -31,18 +33,20 @@
                             <li class="to-home" data-scrollto="main-block"><a>HOME</a> </li>
                             <li class="toSection1" data-scrollto="section1"><a>DELIVERY</a></li>
                             <li class="toSection2" data-scrollto="section2"><a>COMPANY</a></li>
+                            <li class="toSection2" data-scrollto="section3"><a>SEND MASSAGE</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </header>
-        <div class="content">
-            <section class="main-block row">
-                <div class="main text col-lg-6 col-md-6 col-sm-12 col-xs-12">
+           <section class="main-block row">
+                <div class="main text col-lg-6 col-md-6 col-sm-8 col-xs-12">
                     <h1 class="color-text">Better application starts with Cosmit</h1>
                     <p>Welcome to the application development experience that is simple and smart. Our commitment to quality and order makes the difference.</p>
                 </div>
             </section>
+        <div class="content">
+         
             <section class="section1">
                 <h2 class="color-text-white text-align-center margin-bottom">DELIVERY PROCESS</h2>
                 <p class="text-align-center">We partner with companies seeking to have their small or vast jobs done in outsource with a contractor who’s committed to best practices in planning, development and delivery while maintaining privacy, compliance and information security.</p>
@@ -79,36 +83,53 @@
          <div class="form-wrapper">
                <h2 class="color-text text-align-center margin-bottom">SEND MASSAGE</h2>
                <form action="#" name="form-send" id="form-send-massage">
-                   <input type="text" placeholder="subject">
-                   <br>
-                   <textarea name="" id="" cols="50" rows="5" placeholder="write your message"></textarea>
-                   <br>
-                   <button type="submit">Send</button>
-               </form>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+										<input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+									</div>
+                 <div class="form-group description col-md-12">
+										<textarea rows="3" name="message" class="form-control" placeholder="Write your message" required="required"></textarea>
+										
+									</div>
+                
+                 <div class="col-md-12">
+										<div class="actions text-center">
+											<input type="submit" value="Send" name="submit" title="Submit Your Message!">
+										</div>
+									</div>
+                  </div>
+                                 </form>
             </div>
 
         </section>
             <footer id="footer">
                 <div class="footer-content row">
-                                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 col-lg-offset-8 col-md-offset-8 col-sm-offset-8
+                                      <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-lg-offset-8 col-md-offset-8 
 ">
                         <h4 class="margin-top color-text-white">CONTACT</h4>
-                        <ul class="footer-nav">
+                        <ul class="footer-contact">
                             <li><p>Ukraine, Lviv</p></li>
                             <li><p>street Street 45</p></li>
                                                     </ul>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12
- margin-top"> <img src="img/logo_oct23W.png" alt="" width="100%">
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6
+ margin-top"> 
+             <div class="footer-logo-wrapper">  
+             <div class="footer-logo"></div>
+              
+              </div>
+           
+                       
+                       
                         <div class="social">
-                            <a href="" target="_blank" class="margin-l-r"> <img src="img/fbW.svg" alt="" width="20"></a>
+                            <a href="" target="_blank" class="margin-l-r"> <img src="img/fbW.svg" alt="" width="20px"></a>
                             
-                                <a href="" target="_blank" class="margin-l-r"><img src="img/inW.svg" alt="" width="20"> </a>
+                                <a href="" target="_blank" class="margin-l-r"><img src="img/inW.svg" alt="" width="20px"> </a>
                         </div>
                     </div>
                 </div>
                 <div class="copyright-box row">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <p>© Copyright 2017</p>
                     </div>
                 </div>

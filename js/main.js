@@ -1,19 +1,26 @@
 $(document).ready(function () {
 
     var mainBlock = $(".main-block");
+    var contetnBlock = $(".content");
+    var vw = window.innerWidth;
     var vh = window.innerHeight;
     const HEADER_HEIGHT = 75;
 
+    
+    
     function bodyFixHeight() {
 
         mainBlock.css("height", (vh) - 75 + "px");
+        
+        contetnBlock.css("top", $(window).height() - 75 + "px");
 
-        if( vh < 970){
+        if( vw > 970){
             $("section").css("min-height", ($(window).height()) - 75 + "px")
         };
     }
 
     bodyFixHeight();
+    
 
     $(window).resize(function () {
             vw = window.innerWidth,
@@ -25,6 +32,7 @@ $(document).ready(function () {
     });
 
 
+    
     $(document).on('click', '#MainNavigation li', function () {
 
         var scrollTo = $(this).data('scrollto');
@@ -46,6 +54,5 @@ $(document).ready(function () {
             scrollTop: size
         }, 1000);
     }
-    //
-
+    
 });
