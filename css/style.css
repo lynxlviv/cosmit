@@ -26,14 +26,12 @@ p {
 }
 
 .color-text {
-    
     background: linear-gradient(45deg, #0b3f90 33%, #3399cc 66%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .color-text-white {
-    
     background: linear-gradient(45deg, #f9fafc 33%, #dedcd6 66%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -50,7 +48,8 @@ p {
 .margin-bottom {
     margin-bottom: 50px;
 }
-.margin-l-r{
+
+.margin-l-r {
     margin: 0 5px
 }
 
@@ -62,11 +61,13 @@ p {
     text-align: justify;
 }
 
-.flex-center-column{
+.flex-center-column {
     display: flex;
     flex-direction: column;
     justify-content: center
 }
+
+
 /*style for header*/
 
 #header {
@@ -74,12 +75,11 @@ p {
     min-height: 75px;
     margin: 0;
     padding: 0;
-  
 }
 
 .top-navigation-box {
-          width: 100%;
-    min-height: 75px;
+    width: 100%;
+    min-height: 90px;
     background-color: white;
     display: flex;
     box-sizing: border-box;
@@ -92,12 +92,27 @@ p {
     z-index: 100;
     border-radius: 0;
     border: none;
-    margin: 0
+    margin: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.top-navigation-box-collapse {
+    min-height: 75px;
 }
 
 .logo-box {
     padding: 4px;
     box-sizing: border-box;
+}
+
+#big-logo {
+    display: block;
+    transition: all 0.5s ease 0s;
+}
+
+#small-logo {
+    display: none;
+    transition: all 0.5s ease 0s;
 }
 
 .main-menu {
@@ -120,7 +135,7 @@ p {
 #responsive-top-menu>ul>li {
     font-size: 13px;
     /*      width: 80px;*/
-    height: 75px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,7 +165,7 @@ a {
 }
 
 #navbar-button {
-/*    border: 1px solid #6e7c89;*/
+    /*    border: 1px solid #6e7c89;*/
     border: none;
 }
 
@@ -158,7 +173,6 @@ a {
     background: #3399cc;
     height: 3px
 }
-
 
 
 /*style for section*/
@@ -178,7 +192,7 @@ a {
     width: 100%;
     min-height: 100px;
     margin: 0;
-      display: flex;
+    display: flex;
     box-sizing: border-box;
     padding: 0 10%;
     justify-content: flex-start;
@@ -189,7 +203,6 @@ a {
     background-repeat: no-repeat;
     position: fixed;
     top: 75px;
-     
 }
 
 .section1,
@@ -208,17 +221,15 @@ a {
 }
 
 .section1 {
-   
     background: linear-gradient(90deg, #0b3f90 6%, #3399cc 66%);
     color: white;
-    
 }
-.section3{
+
+.section3 {
     background-image: url(../img/bgDotted.png)
 }
 
 .delivery-process-box {
-   
     height: auto;
     margin: 30px 0;
     display: flex;
@@ -228,7 +239,6 @@ a {
 }
 
 .delivery-process {
-    
     height: auto;
     margin: 15px;
     text-align: center;
@@ -250,58 +260,51 @@ a {
     height: auto;
     margin: 25px 0 25px 0;
 }
-.form-wrapper{
+
+.form-wrapper {
     width: 100%;
     height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 25px
-   
-   
 }
-#form-send-massage{
- 
+
+#form-send-massage {
     margin: 0 auto;
-    
-    
-}
-input[type=text], .form-control{
- padding: 4px;
- font-size: 15px;
- border: 1px solid #3399cc;
-margin: 3px;
- border-radius: 5px;
- background: rgba(255, 255, 255, .5);
-/*box-sizing: border-box;*/
- outline: none;
- color: grey;
-    
-  
- 
 }
 
-
+input[type=text],
+.form-control {
+    padding: 4px;
+    font-size: 15px;
+    border: 1px solid #3399cc;
+    margin: 3px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, .5);
+    /*box-sizing: border-box;*/
+    outline: none;
+    color: grey;
+}
 
 input[type=submit] {
-padding: 4px;
- font-size: 15px;
- border: 1px solid rgb(51, 153, 204);
- border-radius: 5px;
- background: rgba(51, 153, 204, 0.5);
-/*box-sizing: border-box;*/
- outline: none;
- color: white;
- width: 100px;
+    padding: 4px;
+    font-size: 15px;
+    border: 1px solid rgb(51, 153, 204);
+    border-radius: 5px;
+    background: rgba(51, 153, 204, 0.5);
+    /*box-sizing: border-box;*/
+    outline: none;
+    color: white;
+    width: 100px;
     cursor: pointer
-    
-  
- 
 }
-input[type=submit]:hover{
-    background: rgba(51, 153, 204, 1);
-};
 
+input[type=submit]:hover {
+    background: rgba(51, 153, 204, 1);
+}
+
+;
 
 /*style for footer*/
 
@@ -331,7 +334,6 @@ footer p {
     font-size: 12px;
     color: white;
     opacity: 0.7
-    
 }
 
 .footer-content {
@@ -347,15 +349,17 @@ footer p {
     justify-content: center;
     padding: 10px
 }
-.footer-logo-wrapper{
+
+.footer-logo-wrapper {
     display: flex;
     justify-content: center;
 }
+
 .footer-logo {
     width: 120px;
     height: 50px;
-   display: flex;
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     background-image: url(../img/logo_oct23W.png);
     background-size: 100%;
     background-repeat: no-repeat
@@ -369,16 +373,15 @@ footer p {
     align-items: center;
     margin: 0;
 }
+
 .copyright-box p {
     font-size: 10px;
     margin: 0
 }
 
-
 .footer-contact {
     list-style: none
 }
-
 
 .up-btn {
     width: 50px;
@@ -398,7 +401,18 @@ footer p {
     opacity: 1
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+    #responsive-top-menu {
+        position: absolute;
+        width: 226%;
+        top: 53px;
+        right: 0;
+        margin-right: -15%;
+        transition: all 0.5s ease 0s;
+    }
+    #responsive-top-menu>ul>li:hover {
+        border-bottom: 3px solid white;
+    }
     #responsive-top-menu>ul {
         list-style: none;
         display: block;
@@ -413,23 +427,20 @@ footer p {
     }
     .main-menu {
         display: block;
-        width: 130px
+        /*        width: 150px*/
     }
     #responsive-top-menu {
-        text-align: right;
+        text-align: center;
     }
     .top-navigation-box {
         padding-right: 0
     }
     .main-block {
-        background-position: 65%;
+        background-position: 45%;
     }
-
     .footer-logo {
-    width: 50px;
-    height: 50px;
- 
-    background-image: url(../img/disc_logoW.png);
-   
-}
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/disc_logoW.png);
+    }
 }
