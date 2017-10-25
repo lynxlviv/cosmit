@@ -276,11 +276,12 @@ a {
 
 input[type=text],
 .form-control {
-    padding: 4px;
-    font-size: 15px;
-    border: 1px solid #3399cc;
+    padding: 18px;
+    height: auto;
+    font-size: 20px;
+    border: 3px solid rgba(51, 153, 204, 0.5);
     margin: 3px;
-    border-radius: 5px;
+    border-radius: 4px;
     background: rgba(255, 255, 255, .5);
     /*box-sizing: border-box;*/
     outline: none;
@@ -288,15 +289,15 @@ input[type=text],
 }
 
 input[type=submit] {
-    padding: 4px;
-    font-size: 15px;
-    border: 1px solid rgb(51, 153, 204);
-    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    border: 3px solid rgba(51, 153, 204, 0.5);
+    border-radius: 4px;
     background: rgba(51, 153, 204, 0.5);
     /*box-sizing: border-box;*/
     outline: none;
     color: white;
-    width: 100px;
+    width: 130px;
     cursor: pointer
 }
 
