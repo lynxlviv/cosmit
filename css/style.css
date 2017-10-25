@@ -72,7 +72,7 @@ p {
 
 #header {
     width: 100%;
-    min-height: 55px;
+   
     margin: 0;
     padding: 0;
 }
@@ -116,15 +116,18 @@ p {
 }
 
 .main-menu {
-    height: inherit;
+     min-height: 55px;
     padding: 0;
     margin-right: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    
 }
 
-#responsive-top-menu {}
+#responsive-top-menu {
+/*   padding: 0*/
+}
 
 #responsive-top-menu>ul {
     list-style: none;
@@ -134,7 +137,7 @@ p {
 
 #responsive-top-menu>ul>li {
     font-size: 13px;
-    /*      width: 80px;*/
+/*          min-width: 80px;*/
     height: 75px;
     display: flex;
     justify-content: center;
@@ -199,6 +202,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     background-image: url(../img/Shut_cl_oct23_2.png);
+    
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
@@ -405,7 +409,7 @@ footer p {
 @media (max-width: 767px) {
     #responsive-top-menu {
         position: absolute;
-        width: 226%;
+        width: 195%;
         top: 43px;
         right: 0;
         margin-right: -15%;
@@ -424,10 +428,16 @@ footer p {
         display: block;
     }
     #responsive-top-menu>ul>li>a {
-        box-sizing: border-box
+        box-sizing: border-box;
+        
+    }
+    
     }
     .main-menu {
         display: block;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 6%
         /*        width: 150px*/
     }
     #responsive-top-menu {
