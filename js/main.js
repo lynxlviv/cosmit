@@ -36,24 +36,23 @@ $(document).ready(function () {
     }
     bodyFixHeight();
     $(window).resize(function () {
-        vw = window.innerWidth
-            , vh = window.innerHeight;
+        vw = window.innerWidth,
+            vh = window.innerHeight;
         mainBlock.css("min-height", vh - 55 + "px");
         bodyFixHeight();
         liFixHeight()
     });
     $(document).on('click', '#MainNavigation li', function () {
+
         var scrollTo = $(this).data('scrollto');
         var el = $('.' + scrollTo);
+
         if (scrollTo == 'main-block') {
-            $("html,body").animate({
-                scrollTop: 0
-            }, 1000);
+            animateBody(0);
         }
         else {
-            $("html,body").animate({
-                scrollTop: el.offset().top - 55
-            }, 1000);
+            var _s = el.offset().top - 55;
+            animateBody(_s);
         }
     });
 
@@ -63,7 +62,9 @@ $(document).ready(function () {
         }, 1000);
     }
     $(window).scroll(function () {
-        liFixHeight()
+
+        liFixHeight();
+
         if ($(document).scrollTop() > 50) {
             $('.top-navigation-box').addClass('top-navigation-box-collapse');
             $('#big-logo').css("display", "none");
