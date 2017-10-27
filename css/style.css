@@ -201,7 +201,7 @@ a {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    background-image: url(../img/Shut_cl_oct23_2.png);
+    background-image: url(../img/Shut_cl_oct24.png);
     
     background-size: cover;
     background-repeat: no-repeat;
@@ -434,7 +434,7 @@ footer p {
     
     }
     .main-menu {
-        display: block;
+/*        display: block;*/
         display: flex;
         justify-content: flex-end;
         padding-right: 6%
@@ -447,7 +447,7 @@ footer p {
         padding-right: 0
     }
     .main-block {
-        background-position: 45%;
+        background-position: 85%;
     }
     .footer-logo {
         width: 50px;
