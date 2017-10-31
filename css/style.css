@@ -79,7 +79,7 @@ p {
 
 .top-navigation-box {
     width: 100%;
-    min-height: 50px;
+    min-height: 75px;
     background-color: white;
     display: flex;
     box-sizing: border-box;
@@ -93,30 +93,62 @@ p {
     border-radius: 0;
     border: none;
     margin: 0;
+     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
 }
 
 .top-navigation-box-collapse {
     min-height: 55px;
+      -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+   
 }
+
+
+
 
 .logo-box {
     padding: 4px;
     box-sizing: border-box;
+    
 }
 
-#big-logo {
+.big-logo {
     display: block;
-    transition: all 0.5s ease 0s;
+     -webkit-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+   
+      
 }
 
-#small-logo {
-    display: none;
-    transition: all 0.5s ease 0s;
+.small-logo {
+    display: block;
+    opacity: 0;
+        height: 0;
+     -webkit-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+     
+}
+
+.block{
+/*    display: block;*/
+     opacity: 1;
+        height: 45px;
+     -webkit-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    
+}
+
+.none{
+/*    display: none;*/
+     opacity: 0;
+    width: 0;
+     -webkit-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
 }
 
 .main-menu {
-     min-height: 55px;
+/*     min-height: 55px;*/
     padding: 0;
     margin-right: 0;
     display: flex;
@@ -144,7 +176,9 @@ p {
     align-items: center;
     border-bottom: 3px solid white;
     box-sizing: border-box;
-    cursor: pointer
+    cursor: pointer;
+     -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 a {
@@ -350,7 +384,8 @@ footer p {
 .social {
     display: flex;
     justify-content: center;
-    padding: 10px
+    padding: 10px;
+    align-items: center
 }
 
 .footer-logo-wrapper {
@@ -369,6 +404,7 @@ footer p {
 }
 
 .copyright-box {
+   
     height: 30px;
     background-color: #dadfe3;
     padding: 15px 6% 15px 6%;
@@ -378,6 +414,7 @@ footer p {
 }
 
 .copyright-box p {
+     color: grey;
     font-size: 10px;
     margin: 0
 }

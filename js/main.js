@@ -1,26 +1,29 @@
 $(document).ready(function () {
     var mainBlock = $(".main-block");
     var contetnBlock = $(".content");
+    var headerLi = $('#responsive-top-menu ul li');
+    var headerNav = $('.top-navigation-box');
     var vw = window.innerWidth;
     var vh = window.innerHeight;
     const HEADER_HEIGHT = 55;
 
     function liFixHeight() {
         vw = window.innerWidth;
-        if ($(document).scrollTop() > 50) {
+        vh = window.innerHeight;
+        if ($(document).scrollTop() > vh) {
             if (vw > 767) {
-                $('#responsive-top-menu ul li').css("height", 55 + "px");
+                headerLi.css("height", 55 + "px");
             }
             else {
-                $('#responsive-top-menu ul li').css("height", "auto");
+                headerLi.css("height", "auto");
             }
         }
         else {
             if (vw > 767) {
-                $('#responsive-top-menu ul li').css("height", 75 + "px");
+                headerLi.css("height", 75 + "px");
             }
             else {
-                $('#responsive-top-menu ul li').css("height", "auto");
+                headerLi.css("height", "auto");
             }
         }
     }
@@ -62,18 +65,25 @@ $(document).ready(function () {
         }, 1000);
     }
     $(window).scroll(function () {
-
+ vh = window.innerHeight;
         liFixHeight();
 
-        if ($(document).scrollTop() > 50) {
-            $('.top-navigation-box').addClass('top-navigation-box-collapse');
-            $('#big-logo').css("display", "none");
-            $('#small-logo').css("display", "block");
+        if ($(document).scrollTop() > vh) {
+            headerNav.addClass('top-navigation-box-collapse');
+           
+            $('.big-logo').addClass("none");
+            $('.small-logo').addClass("block");
+   
+  
         }
         else {
-            $('.top-navigation-box').removeClass('top-navigation-box-collapse');
-            $('#big-logo').css("display", "block");
-            $('#small-logo').css("display", "none");
-        }
+         headerNav.removeClass('top-navigation-box-collapse');
+            
+            $('.big-logo').removeClass("none");
+            $('.small-logo').removeClass("block");
+        
+ 
+            
+         }
     })
 });
