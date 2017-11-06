@@ -31,11 +31,15 @@ $(document).ready(function () {
     function bodyFixHeight() {
         mainBlock.css("height", (vh) - 55 + "px");
         contetnBlock.css("top", $(window).height() + 55 + "px");
+        if(vh > vw){
+            return false;
+        };
         if (vw > 970) {
             $("section").css("min-height", ($(window).height()) - 55 + "px")
         }
-        else {
-            return false;}
+        
+//        else {
+//            return false;}
     }
     bodyFixHeight();
     $(window).resize(function () {
